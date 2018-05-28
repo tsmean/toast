@@ -116,6 +116,46 @@
           }
         }
       }
+    },
+    "@tsmean/toast": {
+      "root": "projects/tsmean/toast",
+      "sourceRoot": "projects/tsmean/toast/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/tsmean/toast/tsconfig.lib.json",
+            "project": "projects/tsmean/toast/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/tsmean/toast/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/tsmean/toast/src/test.ts",
+            "tsConfig": "projects/tsmean/toast/tsconfig.spec.json",
+            "karmaConfig": "projects/tsmean/toast/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/tsmean/toast/tsconfig.lib.json",
+              "projects/tsmean/toast/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "notify-library"
