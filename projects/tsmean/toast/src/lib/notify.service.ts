@@ -7,7 +7,9 @@ const DEFAULT_POSITION = {
   right: 0
 };
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class NotifyService {
 
   private _notifications: Subject<AppNotification> = new Subject();
