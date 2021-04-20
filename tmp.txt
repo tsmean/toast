@@ -1,3 +1,23 @@
+bersling-2:toast Bersling$ ng update @angular/cdk
+Using package manager: 'npm'
+Collecting installed dependencies...
+Found 38 dependencies.
+Fetching dependency metadata from registry...
+                  Package "ng-packagr" has an incompatible peer dependency to "@angular/compiler-cli" (requires "^5.0.0 || ^6.0.0" (extended), would install "12.0.0-next.9").
+                  Package "tsickle" has an incompatible peer dependency to "typescript" (requires ">=2.4.2 <2.8", would install "4.2.4").
+                  Package "@angular/material" has an incompatible peer dependency to "@angular/cdk" (requires "6.1.0", would install "11.2.9").
+                  Package "codelyzer" has an incompatible peer dependency to "@angular/common" (requires ">=2.3.1 <7.0.0 || >6.0.0-beta <7.0.0" (extended), would install "12.0.0-next.9").
+                  Package "ng-packagr" has an incompatible peer dependency to "@angular/compiler" (requires "^5.0.0 || ^6.0.0" (extended), would install "12.0.0-next.9").
+                  Package "codelyzer" has an incompatible peer dependency to "@angular/core" (requires ">=2.3.1 <7.0.0 || >6.0.0-beta <7.0.0" (extended), would install "12.0.0-next.9").
+                  Package "codelyzer" has an incompatible peer dependency to "@angular/platform-browser" (requires ">=2.3.1 <7.0.0 || >6.0.0-beta <7.0.0" (extended), would install "12.0.0-next.9").
+                  Package "codelyzer" has an incompatible peer dependency to "@angular/platform-browser-dynamic" (requires ">=2.3.1 <7.0.0 || >6.0.0-beta <7.0.0" (extended), would install "12.0.0-next.9").
+✖ Migration failed: Incompatible peer dependencies found.
+Peer dependency warnings when installing dependencies means that those dependencies might not work correctly together.
+You can use the '--force' option to ignore incompatible peer dependencies and instead address these warnings later.
+  See "/private/var/folders/t7/f0pvv3197cs09ry77kgx0d6h0000gr/T/ng-AV2sq6/angular-errors.log" for further details.
+
+================
+
 bersling-2:toast Bersling$ ng update
 Using package manager: 'npm'
 Collecting installed dependencies...
