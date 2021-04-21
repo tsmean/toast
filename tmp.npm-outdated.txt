@@ -1,0 +1,15 @@
+Using package manager: 'npm'
+Collecting installed dependencies...
+Found 37 dependencies.
+    We analyzed your package.json, there are some packages to update:
+    
+      Name                               Version                  Command to update
+     --------------------------------------------------------------------------------
+      @angular/cdk                       6.1.0 -> 11.2.9          ng update @angular/cdk
+      @angular/cli                       6.0.5 -> 11.2.9          ng update @angular/cli
+      @angular/core                      6.0.3 -> 11.2.10         ng update @angular/core
+      @angular/material                  6.1.0 -> 11.2.9          ng update @angular/material
+      rxjs                               6.2.0 -> 6.6.7           ng update rxjs
+    
+    There might be additional packages which don't provide 'ng update' capabilities that are outdated.
+    You can update the additional packages by running the update command of your package manager.
