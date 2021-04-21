@@ -4,9 +4,14 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "watch": "ng build @tsmean/toast --watch",
+    "build": "ng build @tsmean/toast --prod",
+    "publish": "cd dist/tsmean/toast && npm publish",
+    "publish-beta": "cd dist/tsmean/toast && npm publish --tag beta",
+    "build-and-publish": "npm run build-toast && npm run publish-toast",
+    "build-and-publish-beta": "npm run build-toast && npm run publish-toast-beta"
   },
   "private": true,
   "dependencies": {
