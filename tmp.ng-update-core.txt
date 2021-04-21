@@ -1,0 +1,124 @@
+bersling-2:toast Bersling$ ng update @angular/core
+Using package manager: 'npm'
+Collecting installed dependencies...
+Found 37 dependencies.
+Fetching dependency metadata from registry...
+                  Package "ng-packagr" has an incompatible peer dependency to "@angular/compiler-cli" (requires "^5.0.0 || ^6.0.0" (extended), would install "11.2.10").
+                  Package "tsickle" has an incompatible peer dependency to "typescript" (requires ">=2.4.2 <2.8", would install "4.1.5").
+                  Package "codelyzer" has an incompatible peer dependency to "@angular/common" (requires ">=2.3.1 <7.0.0 || >6.0.0-beta <7.0.0" (extended), would install "11.2.10").
+                  Package "ng-packagr" has an incompatible peer dependency to "@angular/compiler" (requires "^5.0.0 || ^6.0.0" (extended), would install "11.2.10").
+                  Package "codelyzer" has an incompatible peer dependency to "@angular/core" (requires ">=2.3.1 <7.0.0 || >6.0.0-beta <7.0.0" (extended), would install "11.2.10").
+                  Package "codelyzer" has an incompatible peer dependency to "@angular/platform-browser" (requires ">=2.3.1 <7.0.0 || >6.0.0-beta <7.0.0" (extended), would install "11.2.10").
+                  Package "codelyzer" has an incompatible peer dependency to "@angular/platform-browser-dynamic" (requires ">=2.3.1 <7.0.0 || >6.0.0-beta <7.0.0" (extended), would install "11.2.10").
+✖ Migration failed: Incompatible peer dependencies found.
+Peer dependency warnings when installing dependencies means that those dependencies might not work correctly together.
+You can use the '--force' option to ignore incompatible peer dependencies and instead address these warnings later.
+  See "/private/var/folders/t7/f0pvv3197cs09ry77kgx0d6h0000gr/T/ng-pjV80u/angular-errors.log" for further details.
+
+bersling-2:toast Bersling$ ng update @angular/core --force
+Using package manager: 'npm'
+Collecting installed dependencies...
+Found 37 dependencies.
+Fetching dependency metadata from registry...
+                  Package "ng-packagr" has an incompatible peer dependency to "@angular/compiler-cli" (requires "^5.0.0 || ^6.0.0" (extended), would install "11.2.10").
+                  Package "tsickle" has an incompatible peer dependency to "typescript" (requires ">=2.4.2 <2.8", would install "4.1.5").
+                  Package "codelyzer" has an incompatible peer dependency to "@angular/common" (requires ">=2.3.1 <7.0.0 || >6.0.0-beta <7.0.0" (extended), would install "11.2.10").
+                  Package "ng-packagr" has an incompatible peer dependency to "@angular/compiler" (requires "^5.0.0 || ^6.0.0" (extended), would install "11.2.10").
+                  Package "codelyzer" has an incompatible peer dependency to "@angular/core" (requires ">=2.3.1 <7.0.0 || >6.0.0-beta <7.0.0" (extended), would install "11.2.10").
+                  Package "codelyzer" has an incompatible peer dependency to "@angular/platform-browser" (requires ">=2.3.1 <7.0.0 || >6.0.0-beta <7.0.0" (extended), would install "11.2.10").
+                  Package "codelyzer" has an incompatible peer dependency to "@angular/platform-browser-dynamic" (requires ">=2.3.1 <7.0.0 || >6.0.0-beta <7.0.0" (extended), would install "11.2.10").
+    Updating package.json with dependency @angular/compiler-cli @ "11.2.10" (was "6.0.3")...
+    Updating package.json with dependency typescript @ "4.1.5" (was "2.7.2")...
+    Updating package.json with dependency @angular/language-service @ "11.2.10" (was "6.0.3")...
+    Updating package.json with dependency @angular/animations @ "11.2.10" (was "6.0.3")...
+    Updating package.json with dependency @angular/common @ "11.2.10" (was "6.0.3")...
+    Updating package.json with dependency @angular/compiler @ "11.2.10" (was "6.0.3")...
+    Updating package.json with dependency @angular/core @ "11.2.10" (was "6.0.3")...
+    Updating package.json with dependency @angular/forms @ "11.2.10" (was "6.0.3")...
+    Updating package.json with dependency @angular/platform-browser @ "11.2.10" (was "6.0.3")...
+    Updating package.json with dependency @angular/platform-browser-dynamic @ "11.2.10" (was "6.0.3")...
+    Updating package.json with dependency @angular/router @ "11.2.10" (was "6.0.3")...
+    Updating package.json with dependency rxjs @ "6.6.7" (was "6.2.0")...
+    Updating package.json with dependency zone.js @ "0.11.4" (was "0.8.26")...
+  UPDATE package.json (1510 bytes)
+✔ Packages installed successfully.
+** Executing migrations of package '@angular/core' **
+
+❯ @DOCUMENT migration.
+  Migrates DOCUMENT Injection token from platform-browser imports to common import.
+  Migration completed.
+
+❯ ViewChild and ContentChild to explicit query timing migration.
+  In Angular version 8, developers need to explicitly specify the timing of ViewChild and ContentChild queries.
+  Read more about this here: https://v8.angular.io/guide/static-query-migration
+  Migration completed.
+
+❯ Template Variable Assignment migration.
+  Warns developers if values are assigned to template variables.
+  Migration completed.
+
+❯ Static flag migration.
+  Removes the `static` flag from dynamic queries.
+  As of Angular 9, the "static" flag defaults to false and is no longer required for your view and content queries.
+  Read more about this here: https://v9.angular.io/guide/migration-dynamic-flag
+  Migration completed.
+
+❯ Renderer to Renderer2 migration.
+  As of Angular 9, the Renderer class is no longer available.
+  Renderer2 should be used instead.
+  Read more about this here: https://v9.angular.io/guide/migration-renderer
+  Migration completed.
+
+❯ Undecorated classes with DI migration.
+  As of Angular 9, it is no longer supported to use Angular DI on a class that does not have an Angular decorator.
+  Read more about this here: https://v9.angular.io/guide/migration-undecorated-classes
+  Migration completed.
+
+❯ Missing @Injectable and incomplete provider definition migration.
+  As of Angular 9, enforcement of @Injectable decorators for DI is a bit stricter and incomplete provider definitions behave differently.
+  Read more about this here: https://v9.angular.io/guide/migration-injectable
+  Migration completed.
+
+❯ ModuleWithProviders migration.
+  As of Angular 10, the ModuleWithProviders type requires a generic.
+  This migration adds the generic where it is missing.
+  Read more about this here: https://v10.angular.io/guide/migration-module-with-providers
+  Migration completed.
+
+❯ Undecorated classes with Angular features migration.
+  In version 10, classes that use Angular features and do not have an Angular decorator are no longer supported.
+  Read more about this here: https://v10.angular.io/guide/migration-undecorated-classes
+  Migration completed.
+
+❯ In Angular version 11, the type of `AbstractControl.parent` can be `null` to reflect the runtime value more accurately.
+  This migration automatically adds non-null assertions to existing accesses of the `parent` property on types like `FormControl`, `FormArray` and `FormGroup`.
+  Migration completed.
+
+❯ ViewEncapsulation.Native has been removed as of Angular version 11.
+  This migration replaces any usages with ViewEncapsulation.ShadowDom.
+  Migration completed.
+
+❯ NavigationExtras omissions migration.
+  In version 11, some unsupported properties were omitted from the `extras` parameter of the `Router.navigateByUrl` and `Router.createUrlTree` methods.
+  Migration completed.
+
+❯ Updates the `initialNavigation` property for `RouterModule.forRoot`.
+  Migration completed.
+
+❯ NavigationExtras.preserveQueryParams has been removed as of Angular version 11.
+   This migration replaces any usages with the appropriate assignment of the queryParamsHandling key.
+  Migration completed.
+
+❯ The default value for `relativeLinkResolution` is changing from 'legacy' to 'corrected'.
+This migration updates `RouterModule` configurations that use the default value to
+now specifically use 'legacy' to prevent breakages when updating.
+  Migration completed.
+
+❯ `async` to `waitForAsync` migration.
+  The `async` testing function has been renamed to `waitForAsync` to avoid confusion with the native `async` keyword.
+  UPDATE src/app/app.component.spec.ts (1032 bytes)
+  Migration completed.
+
+❯ Removes `canActivate` from a `Route` config when `redirectTo` is also present.
+  Migration completed.
+
