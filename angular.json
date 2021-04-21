@@ -109,7 +109,7 @@
           },
           "configurations": {
             "production": {
-              "project": "projects/tsmean/toast/ng-package.prod.json"
+              "tsConfig": "projects/tsmean/toast/tsconfig.lib.prod.json"
             }
           }
         },

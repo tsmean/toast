@@ -10,8 +10,8 @@
     "build": "ng build @tsmean/toast --prod",
     "publish": "cd dist/tsmean/toast && npm publish",
     "publish-beta": "cd dist/tsmean/toast && npm publish --tag beta",
-    "build-and-publish": "npm run build-toast && npm run publish-toast",
-    "build-and-publish-beta": "npm run build-toast && npm run publish-toast-beta"
+    "build-and-publish": "npm run build && npm run publish",
+    "build-and-publish-beta": "npm run build && npm run publish-beta"
   },
   "private": true,
   "dependencies": {
